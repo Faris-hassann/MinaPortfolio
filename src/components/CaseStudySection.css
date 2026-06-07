@@ -1,0 +1,108 @@
+.case-study-section {
+  background-color: var(--card-bg);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.case-study-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.cs-brand-name {
+  font-size: 3rem;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.cs-role {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.cs-container {
+  display: flex;
+  gap: 60px;
+  align-items: stretch;
+}
+
+.cs-content-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cs-tabs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 16px;
+  overflow-x: auto;
+}
+
+.cs-tab-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--font-heading);
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.cs-tab-btn:hover {
+  color: var(--text-primary);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme='light'] .cs-tab-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.cs-tab-btn.active {
+  color: #050505;
+  background-color: var(--accent-primary);
+}
+
+.cs-tab-content {
+  background-color: var(--bg-color);
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  flex: 1;
+}
+
+.cs-tab-title {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: var(--accent-primary);
+}
+
+.cs-tab-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+.cs-image-box {
+  flex: 1;
+}
+
+.cs-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
+@media (max-width: 992px) {
+  .cs-container {
+    flex-direction: column-reverse;
+  }
+}

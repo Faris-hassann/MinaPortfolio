@@ -1,0 +1,11 @@
+/* Component specific styles will be handled in their respective CSS modules or via inline styles for simplicity, but App.css is mostly cleared. */
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
