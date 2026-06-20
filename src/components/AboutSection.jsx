@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutSection.css';
+import aboutImg from '../assets/IMG_20260302_130752_405.webp';
 
 const AboutSection = () => {
   const keywords = [
@@ -11,9 +12,7 @@ const AboutSection = () => {
     <section id="about" className="about-section section-padding">
       <div className="container about-container">
         <div className="about-image">
-          <div className="image-placeholder team-placeholder">
-            <span>[ Team/Group Image Placeholder ]</span>
-          </div>
+          <img src={aboutImg} alt="About Me" className="about-image-photo" />
         </div>
         <div className="about-content">
           <h2 className="section-title">About <span className="accent-text">Me</span></h2>

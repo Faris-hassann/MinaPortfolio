@@ -68,9 +68,7 @@ const ExperienceEducationSection = () => {
             </div>
 
           </div>
-          <div className="image-placeholder edu-image-placeholder mt-4">
-             <span>[ Education/Experience Visual Placeholder ]</span>
-          </div>
+
         </div>
 
       </div>

@@ -1,5 +1,23 @@
 import React, { useState } from 'react';
 import './ProjectGallerySection.css';
+import gradVideo from '../assets/copy project 1 grad.mp4';
+import project2Img from '../assets/Copy project 2.png';
+import project3Img from '../assets/Copy project 3.jpg';
+import project4Img from '../assets/Copy project 4.png';
+import project5Img from '../assets/Copy project 5.webp';
+import project6Img from '../assets/Copy project 6.png';
+import youtubeGameImg from '../assets/section 1 youtube game salsagya.png';
+import christmasImg from '../assets/section 1 christmas.png';
+import podcastImg from '../assets/section 1 podcast_.png';
+import ramadanVideo from '../assets/section 3 ramadan.mp4';
+import limoVideo from '../assets/section 3 limo projet.mp4';
+import mandarineVideo from '../assets/section 3 mandrin keuidar.mp4';
+import socialImg1 from '../assets/Section 3 sociale média posts_(1).jpg';
+import socialImg2 from '../assets/Section 3 sociale média posts_(2).jpg';
+import socialImg3 from '../assets/Section 3 sociale média posts_(3).jpg';
+import socialImg4 from '../assets/Section 3 sociale média posts_(4).jpg';
+import socialImg5 from '../assets/Section 3 sociale média posts_(5).jpg';
+import socialImg6 from '../assets/Section 3 sociale média posts_(6).jpg';
 
 const ProjectGallerySection = () => {
   const [filter, setFilter] = useState('All');
@@ -15,7 +33,8 @@ const ProjectGallerySection = () => {
       category: "Campaign Ideas",
       type: "Nubian fashion store",
       desc: "Each person has a different personality, yet everyone can wear the same brand because it is beautiful, flexible, and suits every taste.",
-      arabic: null
+      arabic: null,
+      video: gradVideo
     },
     {
       id: 2,
@@ -23,7 +42,8 @@ const ProjectGallerySection = () => {
       category: "Campaign Ideas",
       type: "Cookware campaign concept",
       desc: "A time journey from pottery to copper to stainless steel, then the new cookware appears as the beginning of a “new era.”",
-      arabic: null
+      arabic: null,
+      image: project2Img
     },
     {
       id: 3,
@@ -31,7 +51,8 @@ const ProjectGallerySection = () => {
       category: "Copywriting",
       type: "Funny awareness concept",
       desc: "Street activation asking funny questions until reaching the cookware-bottom question, then revealing the product.",
-      arabic: "عمرك بصيت على قعر الحلة من تحت؟ لو بصيت هتلاقي شكلها شبه بسكوت الأوريو."
+      arabic: "عمرك بصيت على قعر الحلة من تحت؟ لو بصيت هتلاقي شكلها شبه بسكوت الأوريو.",
+      image: project3Img
     },
     {
       id: 4,
@@ -39,7 +60,8 @@ const ProjectGallerySection = () => {
       category: "Copywriting",
       type: "Awareness concept",
       desc: "Highlighting that while mobile tech hasn't changed much recently, this new cookware brings new Egyptian-made technology.",
-      arabic: "مبقاش في تقدم في التكنولوجيا زي زمان، بس إحنا نزلنا بتكنولوجيا جديدة أول مرة تنزل مصر."
+      arabic: "مبقاش في تقدم في التكنولوجيا زي زمان، بس إحنا نزلنا بتكنولوجيا جديدة أول مرة تنزل مصر.",
+      image: project4Img
     },
     {
       id: 5,
@@ -47,7 +69,8 @@ const ProjectGallerySection = () => {
       category: "Campaign Ideas",
       type: "Recall campaign",
       desc: "Use the brand name inside funny everyday examples to connect it to pest control services.",
-      arabic: null
+      arabic: null,
+      image: project5Img
     },
     {
       id: 6,
@@ -55,7 +78,8 @@ const ProjectGallerySection = () => {
       category: "Copywriting",
       type: "Branded storytelling",
       desc: "Mandarine Koueider becomes the reward after success, tied to a nostalgic childhood story.",
-      arabic: null
+      arabic: null,
+      image: project6Img
     },
     {
       id: 7,
@@ -63,7 +87,8 @@ const ProjectGallerySection = () => {
       category: "YouTube Concepts",
       type: "Creative Series",
       desc: "Interactive talk-show format where participants try to convince someone with different viewpoints.",
-      arabic: null
+      arabic: null,
+      image: youtubeGameImg
     },
     {
       id: 8,
@@ -71,7 +96,8 @@ const ProjectGallerySection = () => {
       category: "YouTube Concepts",
       type: "Entertainment Series",
       desc: "Modern reinterpretation of Santa Claus inside a corporate environment exploring company culture.",
-      arabic: null
+      arabic: null,
+      image: christmasImg
     },
     {
       id: 9,
@@ -79,7 +105,8 @@ const ProjectGallerySection = () => {
       category: "YouTube Concepts",
       type: "Podcast",
       desc: "Discussing real industry chaos, client situations, and behind-the-scenes decision-making.",
-      arabic: null
+      arabic: null,
+      image: podcastImg
     },
     {
       id: 10,
@@ -87,7 +114,8 @@ const ProjectGallerySection = () => {
       category: "Scripts",
       type: "Video Script",
       desc: "Promote Ramadan decoration services with an emotional seasonal connection.",
-      arabic: null
+      arabic: null,
+      video: ramadanVideo
     },
     {
       id: 11,
@@ -111,7 +139,8 @@ const ProjectGallerySection = () => {
       category: "Brand Characters",
       type: "Character Design",
       desc: "Custom mascot for Racing Line to capture attention and increase brand awareness.",
-      arabic: null
+      arabic: null,
+      video: limoVideo
     },
     {
       id: 14,
@@ -119,7 +148,8 @@ const ProjectGallerySection = () => {
       category: "Brand Characters",
       type: "Character Design",
       desc: "Designed and developed a custom mascot for Kouidar for brand-focused execution.",
-      arabic: null
+      arabic: null,
+      video: mandarineVideo
     },
     {
       id: 15,
@@ -127,7 +157,8 @@ const ProjectGallerySection = () => {
       category: "Social Media Posts",
       type: "Social Content",
       desc: "Original thinking and brand-focused creative work from idea generation to visual direction.",
-      arabic: null
+      arabic: null,
+      images: [socialImg1, socialImg2, socialImg3, socialImg4, socialImg5, socialImg6]
     }
   ];
 
@@ -158,8 +189,22 @@ const ProjectGallerySection = () => {
         <div className="projects-grid">
           {filteredProjects.map(project => (
             <div key={project.id} className="project-card">
-              <div className="project-image-placeholder">
-                <span>[ {project.title} Image ]</span>
+              <div className="project-media">
+                {project.video ? (
+                  <video src={project.video} className="project-video" controls muted loop />
+                ) : project.images ? (
+                  <div className="project-image-grid">
+                    {project.images.map((img, idx) => (
+                      <img key={idx} src={img} alt={`${project.title} ${idx + 1}`} className="project-img-grid-item" />
+                    ))}
+                  </div>
+                ) : project.image ? (
+                  <img src={project.image} alt={project.title} className="project-img" />
+                ) : (
+                  <div className="project-image-placeholder">
+                    <span>[ {project.title} Image ]</span>
+                  </div>
+                )}
               </div>
               <div className="project-info">
                 <span className="project-category">{project.category}</span>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './CaseStudySection.css';
+import caseStudyImg from '../assets/Section 2 case study_.png';
 
 const CaseStudySection = () => {
   const [activeTab, setActiveTab] = useState('challenge');
@@ -46,9 +47,7 @@ const CaseStudySection = () => {
             </div>
           </div>
           <div className="cs-image-box">
-             <div className="image-placeholder cs-placeholder">
-               <span>[ Racing Line / Limo Visuals Placeholder ]</span>
-             </div>
+             <img src={caseStudyImg} alt="Racing Line Case Study" className="cs-image-photo" />
           </div>
         </div>
       </div>

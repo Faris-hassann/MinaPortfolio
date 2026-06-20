@@ -1,5 +1,6 @@
 import React from 'react';
 import './HeroSection.css';
+import heroImg from '../assets/hero.png';
 
 const HeroSection = () => {
   return (
@@ -20,9 +21,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="hero-image-container">
-          <div className="image-placeholder portrait-placeholder">
-            <span>[ Portrait Image Placeholder ]</span>
-          </div>
+          <img src={heroImg} alt="Mina Ibrahim" className="hero-image" />
         </div>
       </div>
     </section>
